@@ -1,13 +1,13 @@
 import { createStore } from 'vuex'
 import employeeModule from './modules/employees' // ✅ renamed to avoid conflict
-import axios from 'axios'
+import api from '../api'
 
 // Load saved employee and token from localStorage
 const savedUser = localStorage.getItem('currentEmployee')
 const savedToken = localStorage.getItem('token')
 
 if (savedToken) {
-  axios.defaults.headers.common['Authorization'] = `Bearer ${savedToken}`
+  api.defaults.headers.common['Authorization'] = `Bearer ${savedToken}`
 }
 
 export default createStore({
@@ -57,7 +57,7 @@ export default createStore({
   actions: {
     async login({ commit }, { username, password }) {
       try {
-        const res = await axios.post('http://localhost:9090/login', { username, password })
+        const res = await api.post('/login', { username, password })
         const user = res.data.user
 
         if (!user) {
@@ -65,9 +65,9 @@ export default createStore({
           return { success: false }
         }
 
-        localStorage.setItem('token', res.data.token)
-        localStorage.setItem('currentEmployee', JSON.stringify(user))
-        axios.defaults.headers.common['Authorization'] = `Bearer ${res.data.token}`
+  localStorage.setItem('token', res.data.token)
+  localStorage.setItem('currentEmployee', JSON.stringify(user))
+  api.defaults.headers.common['Authorization'] = `Bearer ${res.data.token}`
         commit('setCurrentEmployee', user)
 
         return { success: true }
@@ -86,13 +86,13 @@ export default createStore({
       }
 
       if (token) {
-        axios.defaults.headers.common['Authorization'] = `Bearer ${token}`
+        api.defaults.headers.common['Authorization'] = `Bearer ${token}`
       }
     },
 
     async submitLeaveRequest({ commit }, payload) {
       try {
-        const res = await axios.post('http://localhost:9090/hrstaff', payload)
+        const res = await api.post('/hrstaff', payload)
         commit('addLeaveRequest', res.data)
         return { success: true }
       } catch (error) {
@@ -103,7 +103,7 @@ export default createStore({
 
     async addEmployee({ commit }, payload) {
       try {
-        const res = await axios.post('http://localhost:9090/employee', payload)
+        const res = await api.post('/employee', payload)
         commit('setAddedEmployee', res.data)
       } catch (error) {
         return error
@@ -112,7 +112,7 @@ export default createStore({
 
     async deleteEmployee({ dispatch }, name) {
       try {
-        await axios.delete(`http://localhost:9090/employee/${name}`)
+        await api.delete(`/employee/${name}`)
         dispatch('fetchemployees')
       } catch (error) {
         console.error('Error deleting employee:', error)
@@ -121,7 +121,7 @@ export default createStore({
 
     async fetchLeaveRequests({ commit }) {
       try {
-        const res = await axios.get('http://localhost:9090/leave-requests')
+        const res = await api.get('/leave-requests')
         commit('setLeaveRequests', res.data.data)
       } catch (error) {
         return error
@@ -130,7 +130,7 @@ export default createStore({
 
     async fetchAttendance({ commit }) {
       try {
-        const res = await axios.get('http://localhost:9090/attendance')
+        const res = await api.get('/attendance')
         commit('setAttendance', res.data.data)
       } catch (error) {
         return error
@@ -139,7 +139,7 @@ export default createStore({
 
     async fetchemployees({ commit }) {
       try {
-        const res = await axios.get('http://localhost:9090/employees')
+        const res = await api.get('/employees')
         commit('setEmployees', res.data.data || res.data)
       } catch (error) {
         console.error('Error fetching employees:', error)
@@ -148,7 +148,7 @@ export default createStore({
 
     async fetchPayslips({ commit }) {
       try {
-        const res = await axios.get('http://localhost:9090/payslips')
+        const res = await api.get('/payslips')
         commit('setPayslips', res.data)
         return { success: true }
       } catch (error) {
@@ -159,7 +159,7 @@ export default createStore({
 
     async updateLeaveStatus({ commit }, { id, status }) {
       try {
-        await axios.patch('http://localhost:9090/leave-requests/update-status', { id, status })
+        await api.patch('/leave-requests/update-status', { id, status })
         commit('updateLeaveStatus', { id, status })
         return { success: true }
       } catch (error) {
