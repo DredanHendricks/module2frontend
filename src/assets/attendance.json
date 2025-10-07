@@ -1,0 +1,102 @@
+[
+  {
+    "employee": "Sibongile Nkosi",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Absent",
+      "2025-07-27": "Present",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Lungile Moyo",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Absent",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Thabo Molefe",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Present",
+      "2025-07-28": "Absent",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Keshav Naidoo",
+    "attendance": {
+      "2025-07-25": "Absent",
+      "2025-07-26": "Present",
+      "2025-07-27": "Present",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Zanele Khumalo",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Absent",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Sipho Zulu",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Absent",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Naledi Moeketsi",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Present",
+      "2025-07-28": "Absent",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Farai Gumbo",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Absent",
+      "2025-07-27": "Present",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Karabo Dlamini",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Present",
+      "2025-07-28": "Absent",
+      "2025-07-29": "Present"
+    }
+  },
+  {
+    "employee": "Fatima Patel",
+    "attendance": {
+      "2025-07-25": "Present",
+      "2025-07-26": "Present",
+      "2025-07-27": "Absent",
+      "2025-07-28": "Present",
+      "2025-07-29": "Present"
+    }
+  }
+]

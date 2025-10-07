@@ -1,0 +1,124 @@
+{
+    "employeeInformation": [
+        {
+            "employeeId": 1,
+            "name": "Sibongile Nkosi",
+            "position": "Software Engineer",
+            "department": "Development",
+            "salary": 70000,
+            "employmentHistory": "Joined in 2015, promoted to Senior in 2018",
+            "contact": "sibongile.nkosi@moderntech.com",
+            "username": "sibongile",
+            "password": "nkosi123",
+            "image": "https://i.pinimg.com/736x/4d/58/e5/4d58e5fc4532b5e04c1f85716a4ecc22.jpg"
+        },
+        {
+            "employeeId": 2,
+            "name": "Lungile Moyo",
+            "position": "HR Manager",
+            "department": "HR",
+            "salary": 80000,
+            "employmentHistory": "Joined in 2013, promoted to Manager in 2017",
+            "contact": "lungile.moyo@moderntech.com",
+            "username": "lungile",
+            "password": "moyo123",
+            "image": "https://i.pinimg.com/736x/0a/94/40/0a94401dcb9cd65ceb2621d2f4c38a95.jpg"
+        },
+        {
+            "employeeId": 3,
+            "name": "Thabo Molefe",
+            "position": "Quality Analyst",
+            "department": "QA",
+            "salary": 55000,
+            "employmentHistory": "Joined in 2018",
+            "contact": "thabo.molefe@moderntech.com",
+            "username": "thabo",
+            "password": "molefe123",
+            "image": "https://i.pinimg.com/736x/be/97/d5/be97d542c25ee54ae223f7f55ef159c0.jpg"
+        },
+        {
+            "employeeId": 4,
+            "name": "Keshav Naidoo",
+            "position": "Sales Representative",
+            "department": "Sales",
+            "salary": 60000,
+            "employmentHistory": "Joined in 2020",
+            "contact": "keshav.naidoo@moderntech.com",
+            "username": "keshav",
+            "password": "naidoo123",
+            "image": "https://i.pinimg.com/736x/d0/5d/11/d05d11841ebb622dc6f741cbb65ae000.jpg"
+        },
+        {
+            "employeeId": 5,
+            "name": "Zanele Khumalo",
+            "position": "Marketing Specialist",
+            "department": "Marketing",
+            "salary": 58000,
+            "employmentHistory": "Joined in 2019",
+            "contact": "zanele.khumalo@moderntech.com",
+            "username": "zanele",
+            "password": "khumalo123",
+            "image": "https://i.pinimg.com/736x/5e/ed/f5/5eedf507c5f5dc998665eac69ecf9049.jpg"
+        },
+        {
+            "employeeId": 6,
+            "name": "Sipho Zulu",
+            "position": "UI/UX Designer",
+            "department": "Design",
+            "salary": 65000,
+            "employmentHistory": "Joined in 2016",
+            "contact": "sipho.zulu@moderntech.com",
+            "username": "sipho",
+            "password": "zulu123",
+            "image": "https://i.pinimg.com/736x/3e/cc/2d/3ecc2d4faa95d7447c866c24f7e0d4be.jpg"
+        },
+        {
+            "employeeId": 7,
+            "name": "Naledi Moeketsi",
+            "position": "DevOps Engineer",
+            "department": "IT",
+            "salary": 72000,
+            "employmentHistory": "Joined in 2017",
+            "contact": "naledi.moeketsi@moderntech.com",
+            "username": "naledi",
+            "password": "moeketsi123",
+            "image": "https://i.pinimg.com/736x/6e/55/cc/6e55ccc4dd410be37aba62e40b24a4fa.jpg"
+        },
+        {
+            "employeeId": 8,
+            "name": "Farai Gumbo",
+            "position": "Content Strategist",
+            "department": "Marketing",
+            "salary": 56000,
+            "employmentHistory": "Joined in 2021",
+            "contact": "farai.gumbo@moderntech.com",
+            "username": "farai",
+            "password": "gumbo123",
+            "image": "https://i.pinimg.com/736x/6e/d9/cf/6ed9cfcf0807285a49906af19c8ef2a6.jpg"
+        },
+        {
+            "employeeId": 9,
+            "name": "Karabo Dlamini",
+            "position": "Accountant",
+            "department": "Finance",
+            "salary": 62000,
+            "employmentHistory": "Joined in 2018",
+            "contact": "karabo.dlamini@moderntech.com",
+            "username": "karabo",
+            "password": "dlamini123",
+            "image": "https://i.pinimg.com/736x/51/55/ae/5155aead1a1b126d49bca6d4473be29f.jpg"
+        },
+        {
+            "employeeId": 10,
+            "name": "Fatima Patel",
+            "position": "Customer Support Lead",
+            "department": "Support",
+            "salary": 58000,
+            "employmentHistory": "Joined in 2016",
+            "contact": "fatima.patel@moderntech.com",
+            "username": "fatima",
+            "password": "patel456",
+            "image": "https://i.pinimg.com/736x/ef/53/8b/ef538bfd9730f35e224127efa51a432a.jpg"
+        }
+    ]
+}
