@@ -4,7 +4,7 @@
     <div class="login d-flex align-items-start mt-5 justify-content-center bg-white shadow-lg rounded-4 border-0 p-4">
       <form class="d-flex flex-column justify-content-center w-100" @submit.prevent="handleSignIn">
         <h2 class="display-6 text-success mb-4 fw-bold text-center">Sign in</h2>
-        <p>For demo purposes the username:fatima; password:patel456;</p>
+        <p>For demo purposes</p><p>username:fatima; password:patel456;</p>
         <div class="mb-3">
           <label class="form-label text-success fw-semibold" for="Username">Username</label>
           <input
