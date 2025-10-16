@@ -11,7 +11,7 @@
     <div class="modal-content border-0 rounded-4 mx-auto">
       <div class="modal-header bg-success text-white rounded-top-4 border-0 d-flex align-items-center justify-content-between">
         <h5 class="modal-title fw-bold">Admin Login</h5>
-       <p>Username: Admin Password: admin123</p>
+       <p>Username: admin Password: admin123</p>
         <button type="button" class="btn-close btn-close-white ms-2" @click="showAdminModal = false" aria-label="Close"></button>
       </div>
       <div class="modal-body p-4 bg-light rounded-bottom-4">
