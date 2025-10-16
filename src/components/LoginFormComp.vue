@@ -3,7 +3,7 @@
     <h1 class="text-light display-4 mt-4 fw-bold text-shadow">Good to see you again 🫠</h1>
     <p class="text-light mt-4 fw-bold text-shadow">For demo purposes </p>
     <p class="text-light fw-bold text-shadow">Username: fatima Password: patel456 </p>
-    <div class="login d-flex align-items-start mt-5 justify-content-center bg-white shadow-lg rounded-4 border-0 p-4">
+    <div class="login d-flex align-items-start mt-2 justify-content-center bg-white shadow-lg rounded-4 border-0 p-4">
       <form class="d-flex flex-column justify-content-center w-100" @submit.prevent="handleSignIn">
         <h2 class="display-6 text-success mb-4 fw-bold text-center">Sign in</h2>
         <div class="mb-3">
